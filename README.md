@@ -7,10 +7,14 @@ http://www.feiteira.org/2016/03/just-some-random-art.html
 On this old pet-project I've designed a mini processor to generate random images.
 
 This is the gist:
+
 The processor has a basic set of registers (x,y,r,g,b) and optionally up-to N 'general purpose' registers ( r0... rN); all registers are floats.
+
 The code of the processor is a list of attributions in the format <register> = <expression>. 
 The <expressions> are binary trees with the nodes containing one operator ( + , - , / or  * ) and the leafs are any of: any register, a constant value X, Pi, sin(<expression>), cos(<expression>), sqrt(<expression>) or simply <expression>.
+
 The number of such attributions is configurable. E.g. here's an example of 16 attributions code:
+```
     y = r2 - r0
     y = x * y
     r1 = r / y
@@ -41,9 +45,12 @@ The number of such attributions is configurable. E.g. here's an example of 16 at
     b = r2 + 0
     r2 = y / g
     y = r * y
+```
 
 The 'emulator' will then iterate over the randomly generated code and at the end of each full  execution will place a pixel of color (r,g,b) on position (x,y) and then resume from start. The absolute and modulus 1 of the registers  (val = abs(r) %1f) is applied to ensure the output value is within the image and a valid color.
 
+
 Naturally most of the "software" is trash and is automatically discarded. From the rest, I manually discard many it for being too boring, and on occasion some is kept because 'it looks nice'. :)
+
 
 Would be nice at some point to have mutations and genetic variations, but I doubt I'll ever get to it.
