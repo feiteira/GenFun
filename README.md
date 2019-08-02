@@ -47,10 +47,47 @@ The number of such attributions is configurable. E.g. here's an example of 16 at
     y = r * y
 ```
 
-The 'emulator' will then iterate over the randomly generated code and at the end of each full  execution will place a pixel of color (r,g,b) on position (x,y) and then resume from start. The absolute and modulus 1 of the registers  (val = abs(r) %1f) is applied to ensure the output value is within the image and a valid color.
+The 'emulator' will then iterate over the randomly generated code and at the end of each full  execution will place a pixel of color (r,g,b) on position (x,y) and then resume from start. The absolute and modulus 1 of the registers  (`val = abs(r) %1f`) is applied to ensure the output value is within the image and a valid color.
 
 
 Naturally most of the "software" is trash and is automatically discarded. From the rest, I manually discard many it for being too boring, and on occasion some is kept because 'it looks nice'. :)
 
 
 Would be nice at some point to have mutations and genetic variations, but I doubt I'll ever get to it.
+
+# Examples
+
+
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457647929649.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457647948847.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457647970856.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457647999646.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457648006298.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457648080677.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457648115379.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804227889.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804269246.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804313324.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804387517.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804724045.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457804817205.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457809369290.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457809723650.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457811017685.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457812357665.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457816388334.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457816589623.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457816598253.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457816603510.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457816623801.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457819450652.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457819601354.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457819913941.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457819952515.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457820623635.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457820660023.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457855944505.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457856120265.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457856262949.png)
+![](https://raw.githubusercontent.com/feiteira/GenFun/master/examples/1457856297267.png)
+
